@@ -1,0 +1,125 @@
+$light: #ffffff;
+$creamy: #a69783; 
+
+.nav.responsive {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: .7;
+}
+
+#responsive {
+    background-color: black;
+    opacity: .7;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+
+    .navWrap {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navLinks {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+
+        .navLink {
+            padding-top: 5px;
+            
+            a {
+                color: $light;
+                font-size: 16px;
+                font-weight: 300;
+                transition: 0.3s ease-in-out;
+                margin-top: 10px;
+            }
+
+            a:hover{
+                color: $creamy;
+            }
+        }
+
+        .linkIcon {
+            color: $light;
+            font-size: 22px;
+            font-weight: 300;
+            transition: 0.3s ease-in-out;
+            margin-top: 15px;
+        }
+
+        .linkIcon:hover {
+            color: $creamy;
+        }
+    }
+
+    .headerMenu {
+        position: absolute;
+        right: 5%;
+        top: 10px;
+        
+        a {
+            color: $light;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: $creamy;
+        }
+
+        #menu {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and ( max-width: 1100px ) {
+    .nav {
+
+        .navWrap {
+            display: flex;
+            flex-direction: column;
+            
+            .navLinks {
+                width: 100%;
+
+                a {
+                    display: none;
+                }
+            }
+            
+            .navLinks.responsive {
+                display: flex;
+                flex-direction: column;
+                
+                a {
+                    display: block;
+                    text-align: center;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .headerMenu {
+
+            #menu {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+$light: #ffffff;
+$creamy: #a69783; 
+$raleway: 'Raleway';
+
+.blog {
+    height: 704px;
+    width: 100%;
+    background-color: $creamy;
+
+    #blogVideo {
+        min-width: 100%; 
+        min-height: 100%;
+    }
+
+    .blogContent {
+        position: relative;
+        bottom: 500px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+
+        #blogIcon {
+            font-size: 50px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-family: $raleway;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 2em;
+        }
+    } 
+
+    #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+}

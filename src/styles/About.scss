@@ -1,0 +1,87 @@
+$grey: #555555;
+$creamy: #a69783; 
+$raleway: 'Raleway';
+
+.about {
+    height: 370px;
+    width: 100%;
+
+    .aboutContainer {
+        width: 80%;
+        margin: 90px auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .aboutCard {
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+
+            .aboutIcons {
+                color: $grey;
+                font-size: 50px;
+                margin-bottom: 25px;
+                margin-top: 30px;
+                transition: 0.5s ease-in-out;
+            }
+           
+            
+
+            h1 {
+                color: $grey;
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                font-family: $raleway;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 14px;
+                color: #8c8c8c;
+                margin-bottom: 50px;
+            }
+        }
+
+        .aboutCard:hover {
+            border-bottom: 1px solid $creamy;
+
+            .aboutIcons {
+                color: $creamy;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 900px ) {
+    .about {
+
+        .aboutContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            .aboutCard {
+                width: 50%;
+              
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 450px ) {
+    .about {
+
+        .aboutContainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            
+            .aboutCard {
+                width: 100%;
+            }
+        }
+    }
+}

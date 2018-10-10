@@ -1,0 +1,145 @@
+$creamy: #a69783; 
+$raleway: "Raleway";
+
+.portfolio {
+    width: 100%;
+    height: 700px;
+    background-color: #fbfaf8;
+    margin-bottom: 150px;
+
+    .pfContainer {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 100px;
+
+        .pfTitle {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+
+            h1 {
+                font-weight: 700;
+                font-size: 30px;
+                color: #555555;
+                margin-bottom: 20px;
+                font-family: $raleway;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                color: #aaa9a9;
+                margin-bottom: 30px;
+            }
+        }
+
+        .pfImg {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .pfTheme {
+        width: 100%;
+        height: 150px;
+        background-image: url('../assets/pfBGI2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -8px;
+
+        .ThemeWrap {
+            width: 80%;
+            height: 150px;
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h6 {
+                font-size: 28px;
+                color: white;
+                margin-bottom: 10px;
+                font-family: $raleway;
+            }
+
+            span {
+                color: $creamy;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                color: #615855;
+            }
+
+            #ThemeBtn {
+                padding: 15px 25px;
+                font-size: 24px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                background-color: $creamy;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+                text-transform: uppercase;
+                transition: 0.3s ease-in-out;
+            }
+            
+            #ThemeBtn:hover {
+                background-color: hsl(34, 11%, 43%);
+            }
+            
+            #ThemeBtn:active {
+                background-color: hsl(34, 11%, 43%);
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    .portfolio {
+        height: auto;
+        margin-top: 100px;
+    }
+}
+
+@media screen and ( max-width: 700px ) {
+    .portfolio {
+
+        .pfTheme {
+            height: auto;
+            
+            .ThemeWrap {
+                height: auto;
+
+                flex-direction: column;
+                text-align: center;
+
+                h6 {
+                    margin-top: 25px;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                }
+                button {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 450px ) {
+    .portfolio {
+        height: auto;
+        margin-top: 550px;
+    }
+}
